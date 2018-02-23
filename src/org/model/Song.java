@@ -6,10 +6,15 @@ public class Song {
 
 	private Window window;
 	private String SongName;
+	private String path;
 
 	public Song(Window window) {
 		this.window = window;
 
+	}
+
+	public Song() {
+		// TODO Auto-generated constructor stub
 	}
 
 	public String getSongName() {
@@ -24,5 +29,20 @@ public class Song {
 		window.getLbSongTitle().setText(SongName);
 		
 	}
+
+	public String getPath() {
+		return path;
+	}
+
+	public void setPath(String path) {
+		this.path = path;
+	}
+
+	@Override
+	public String toString() {
+		return String.format("SongName=%s, path=%s", SongName, path);
+	}
+	
+	
 
 }

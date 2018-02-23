@@ -12,6 +12,7 @@ public class RunWindowController {
 	OpenFileController openFileController = new OpenFileController(window, song);
 	PlayFileController playFileController = new PlayFileController(window, player);
 	StopFileController stopFileController = new StopFileController(window, player);
+	ChangeSongController changeSongController = new ChangeSongController(window, player, openFileController);
 	public void exec(){
 		window.contructFrame();
 		
